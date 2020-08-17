@@ -1,0 +1,180 @@
+html{
+  font-size: 62.4%;
+  box-sizing: border-box;
+}
+
+body{
+  font: 1.6rem Helvetica;
+  margin: 0;
+  height: 100vh;
+}
+
+/* Main Grid Container which holds header footer main */
+.grid-container{
+  display: grid;
+  grid-template-areas: 
+  "header"
+  "main"
+  "footer";
+  grid-template-columns: 1fr;
+  grid-template-rows: 5rem 1fr 5rem;
+  height: 100%;
+}
+
+/* Header Starts */
+.header{
+  grid-area: header;
+  background-color: #203040;
+  color: #ffffff;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 0.5rem;
+}
+
+.brand a{
+  color: #ffffff;
+  font-size: 2.5rem;
+  font-weight: bold;
+  text-decoration: none;
+}
+.header-links a{
+  color: #ffffff;
+  text-decoration: none;
+}
+
+.header-links a:hover{
+  color: #ff8000;
+}
+
+/* Side Bar Starts */
+.brand button{
+  font-size: 3rem;
+  padding: .5rem;
+  background: none;
+  color: #ffffff;
+  border: none;
+  cursor: pointer;
+
+}
+
+/* Side Bar End */
+
+/* Hamburger Menu Starts */
+.sidebar{
+  height: 100%;
+  background-color: #c0c0c0;
+  position: fixed;
+  width: 30rem;
+  transform: translateX(-30rem);
+}
+
+.sidebar.open{
+  transform: translateX(0rem);
+}
+
+.close-menu-button{
+  border-radius: 50%;
+  border: 0.1rem black solid;
+  width: 3rem;
+  height: 3rem;
+  /* background-color: red; */
+  font-size: 2rem;
+  /* font-weight: bold; */
+  cursor: pointer;
+  position: absolute;
+  right: 0.5rem;
+  top: 1.5rem;
+}
+
+/* Hamburger Menu Ends */
+
+/* Header Ends */
+
+/* Main Starts */
+.main{
+  grid-area: main;
+}
+
+/* Main Ends */
+
+/* Global changes start */
+
+a{
+  text-decoration: none;
+}
+
+a:hover{
+  color: #ff8000;
+}
+/* 
+li{
+  list-style-type: none;
+} */
+
+/* Global changes end */
+
+
+/* Footer Start */
+
+.footer{
+  grid-area: footer;
+  background-color: #203040;
+  color: #ffffff;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+/* Footer End */
+
+/* Home Screen Start */
+
+.products{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-wrap: wrap;
+}
+
+.products li{
+  flex: 0 1 34rem; /* 0:flex-grow - 1:flex shrink -  34rem: item-size */
+  padding: 0;
+  list-style-type: none;
+  margin: 1rem;
+  height: 50rem;
+  border-bottom: .1rem #c0c0c0 solid;
+}
+
+.product{
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  height: 100%;
+}
+
+.product-name{
+  font-size: 2rem;
+  font-weight: bold;
+}
+
+.product-brand{
+  font-size: 1.2rem;
+  color: #808080;
+}
+
+.product-price{
+  font-size: 2rem;
+  font-weight: bold;
+}
+
+.product-image{
+  max-width: 34rem;
+  max-height: 34rem;
+}
+
+.product-rating{
+  margin-bottom: 1rem;
+}
+
+/* Home Screen End */

@@ -9,7 +9,8 @@ export const data = {
       price: 60,
       brand: 'Nike',
       rating: 4.5,
-      numReviews: 10
+      numReviews: 10,
+      countInStock: 6
     },
     {
       _id: "2",
@@ -19,7 +20,8 @@ export const data = {
       price: 50,
       brand: 'Nike',
       rating: 4.5,
-      numReviews: 10
+      numReviews: 10,
+      countInStock: 8
     },
     {
       _id: "3",
@@ -29,7 +31,8 @@ export const data = {
       price: 100,
       brand: 'Nike',
       rating: 4.5,
-      numReviews: 10
+      numReviews: 10,
+      countInStock: 3
     },
     {
       _id: "4",
@@ -39,7 +42,8 @@ export const data = {
       price: 610,
       brand: 'Nike',
       rating: 4.5,
-      numReviews: 10
+      numReviews: 10,
+      countInStock: 10
     },
     {
       _id: "5",
@@ -49,7 +53,8 @@ export const data = {
       price: 620,
       brand: 'Nike',
       rating: 4.5,
-      numReviews: 10
+      numReviews: 10,
+      countInStock: 6
     },
     {
       _id: "6",
@@ -59,7 +64,8 @@ export const data = {
       price: 60,
       brand: 'Nike',
       rating: 4.5,
-      numReviews: 10
+      numReviews: 10,
+      countInStock: 6
     },
     {
       _id: "7",
@@ -69,7 +75,8 @@ export const data = {
       price: 60,
       brand: 'Nike',
       rating: 4.5,
-      numReviews: 10
+      numReviews: 10,
+      countInStock: 6
     },
     {
       _id: "8",
@@ -79,7 +86,8 @@ export const data = {
       price: 60,
       brand: 'Nike',
       rating: 4.5,
-      numReviews: 10
+      numReviews: 10,
+      countInStock: 0
     }
   ]
 }
